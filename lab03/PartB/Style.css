@@ -1,0 +1,85 @@
+* {
+    font-family: "Playwrite NG Modern", cursive;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #00AFCA, #FEC50C);
+    color: #333;
+    text-align: center;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 350;
+    margin: 10px 0;
+}
+
+p {
+    padding: 0.5vw;
+    text-align: justify;
+}
+
+#box1, #box2, #box4, #box5, #box6, #box8, #box9 {
+    background-color: #00AFCA;  /* Turquoise background */
+    border: 2px solid purple;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#box3, #box7, #box10 {
+    background-color: #FEC50C;  /* Yellow background */
+    border: 2px solid purple;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#title-container .flag {
+    width: 15vw;
+    object-fit: contain;
+}
+
+#box4 img, #box6 img, #box8 img, #box10 img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#foot {
+    font-size: 1vw;
+    text-align: left;
+}
+
+
+
+

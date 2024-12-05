@@ -1,0 +1,264 @@
+.playwrite-ng-modern {
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
+* {
+    font-family: "Playwrite NG Modern", cursive;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #00AFCA, #FEC50C);
+    color: #333;
+}
+
+
+h1 {
+    font-size: 3.5vw;
+    font-weight: 500; 
+    margin: auto;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 350; 
+    margin: auto;
+    padding: 10px 0;
+}
+
+p {
+    padding: 2vw;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.box1 {
+    border: 2px solid purple;
+    grid-area: box1;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+.flag {
+    width: 15vw;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+    
+}
+
+.box2 {
+    border: 2px solid purple;
+    grid-area: box2;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box3 {
+    border: 2px solid purple;
+    grid-area: box3;
+    background-color: #FEC50C;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box4 {
+    border: 2px solid purple;
+    grid-area: box4;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box5 {
+    border: 2px solid purple;
+    grid-area: box5;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box6 {
+    border: 2px solid purple;
+    grid-area: box6;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box7 {
+    border: 2px solid purple;
+    grid-area: box7;
+    background-color: #FEC50C;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box8 {
+    border: 2px solid purple;
+    grid-area: box8;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box4 img, .box6 img, .box8 img, .box10 img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
+
+.box9 {
+    border: 2px solid purple;
+    grid-area: box9;
+    background-color: #00AFCA;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+.box10 {
+    border: 2px solid purple;
+    grid-area: box10;
+    background-color: #FEC50C;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    grid-area: footer;
+}
+
+#foot {
+    font-size: 1vw;
+    margin-left: 10px;
+    padding: 0;
+    text-align: left;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        gap: 20px 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr 4fr 3fr 1.5fr 1fr;
+        grid-template-areas: "box1 box1 box1 box1 box1 box1 box2 box2 box2 box2 box2 box2"
+                             "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+                             "box4 box4 box4 box4 box5 box5 box5 box5 box6 box6 box6 box6"
+                             "box7 box7 box7 box8 box8 box8 box9 box9 box9 box10 box10 box10"
+                             "footer footer footer footer footer footer footer footer footer footer footer footer ";
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 1023px) {
+    .container {
+        gap: 0 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 20px 3fr 20px 1.75fr 1.75fr 1.75fr 20px 1.5fr 1.5f 1fr;
+        grid-template-areas: "box1 box1"
+                             "box2 box2"
+                             ". ."
+                             "box3 box3"
+                             ". ."
+                             "box4 box4"
+                             "box5 box5"
+                             "box6 box6"
+                             ". ."
+                             "box7 box8"
+                             "box9 box10"
+                             "footer footer";
+    }
+    p {
+        font-size: 3vw; /* Ensure readable text size on small screens */
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+
+    #foot {
+        font-size: 2vw;
+    }
+
+}
+
+@media only screen and (max-width: 579px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10px 6fr 10px 3.5fr 3.5fr 3.5fr 10px 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas: "box1"
+                             "box2"
+                             "."
+                             "box3"
+                             "."
+                             "box4"
+                             "box5"
+                             "box6"
+                             "."
+                             "box7"
+                             "box8"
+                             "box9"
+                             "box10"
+                             "footer";
+    }
+    p {
+        font-size: 3vw; /* Ensure readable text size on small screens */
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+
+    #foot {
+        font-size: 2vw;
+    }
+}
+
